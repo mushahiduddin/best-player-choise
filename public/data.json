@@ -1,0 +1,51 @@
+[
+    {
+      "id": "1",
+      "name": "Brillian Fly",
+      "duration": 455,
+      "img": "../src/images/planks.png",
+      "description": "Planks are a core strengthening move that never gets old and there are seemingly endless variations (like side planks, pictured above) to hit every angle of your core.",
+      "age": "15-50"
+    },
+    {
+      "id": "2",
+      "name": "Barbell Ab Rollout",
+      "duration": 455,
+      "img": "../src/images/Barbell Ab Rollout.png",
+      "description": "Barbell ab rollouts hit your entire core without straining your back when done correctly. Make sure your hips stay in line with your knees and shoulders, and use a comfortable range of motion. Once you’re ready, you can start adding weight for even more of a challenge.",
+      "age": "15-50"
+    },
+    {
+      "id": "3",
+      "name": "Bulgarian Split Squat",
+      "duration": 455,
+      "img": "../src/images/Bulgarian Split Squat.png",
+      "description": "Bulgarian split squats are tough. You may not be able to pile weight on for them, but once you nail the balancing involved in this exercise, it can be your key to huge legs.",
+      "age": "20-50"
+    },
+
+    {
+      "id": "4",
+      "name": "Incline Flye",
+      "duration": 455,
+      "img": "../src/images/Incline Flye.png",
+      "description": "This is a killer way to hit your upper chest. Just set the bench at an incline of no more than 45 degrees, grab some moderately heavy dumbbells, and get lifting",
+      "age": "25-50"
+    },
+    {
+      "id": "5",
+      "name": "Weighted Decline Situp",
+      "duration": 455,
+      "img": "../src/images/Weighted Decline Situp.png",
+      "description": "Weighted decline situps put a few challenging twists on your typical situps. Use a manageable weight and contract your abs to bring your torso up without using much momentum. If it’s too easy, try using a bench with more of a decline.",
+      "age": "25-50"
+    },
+    {
+      "id": "6",
+      "name": "Cable Crossover",
+      "duration": 455,
+      "img": "../src/images/Cable Crossover.png",
+      "description": "The cable crossover is a versatile exercise that’s easy to learn and vital to any chest routine. How high you set the cables is all dependent on what part of the muscle you want to hit (upper or lower). And once you figure out what you’re targeting, you can hop right in and start building your ideal chest.",
+      "age": "15-50"
+    }
+  ]
