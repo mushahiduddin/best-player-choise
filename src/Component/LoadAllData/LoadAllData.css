@@ -1,6 +1,10 @@
 .activity-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    
+    padding: 20px;
+}
+
+.body-container{
+    display: grid;
+    grid-template-columns: 70% 30%;
 }

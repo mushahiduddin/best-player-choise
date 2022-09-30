@@ -1,0 +1,40 @@
+.self-info{
+    display: flex; 
+    align-items: center; 
+    gap: 20px;
+}
+
+.self-info img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.self-body-structure-info{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgray;
+    border-radius: 20px;
+}
+
+.break-list ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: lightgray;
+    border-radius: 20px;
+}
+.break-list li{
+    list-style: none;
+    padding: 10px;
+    background-color: orangered;
+    border-radius: 50%;
+}
+
+.ex-bk-time{
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 20px;
+
+}

@@ -6,11 +6,12 @@ import { useEffect, useState } from 'react';
 function App() {
   const [allData, setAllData] = useState([]);
 
-    useEffect( () =>{
-        fetch(`data.json`)
-        .then(res=> res.json())
-        .then(data => setAllData(data))      
-    }, [])
+  useEffect(() => {
+    fetch(`data.json`)
+      .then(res => res.json())
+      .then(data => setAllData(data))
+  }, [])
+
   return (
     <div className="App">
       <LoadAllData props={allData}></LoadAllData>

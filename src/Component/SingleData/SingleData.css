@@ -1,6 +1,5 @@
 .single-activity-container{
     box-shadow: 1px solid lightgray;
-    border: 1px solid orangered;
     background-color: gray;
 }
 
@@ -12,4 +11,16 @@
 .image-div{
     padding: 15px;
     background-color: lightgray;
+}
+
+.btn{
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: orangered;
+    border-radius: 5px;
+
+}
+
+.activity-info{
+    padding: 10px;
 }
