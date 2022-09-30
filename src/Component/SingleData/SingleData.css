@@ -1,6 +1,9 @@
 .single-activity-container{
     box-shadow: 1px solid lightgray;
     background-color: gray;
+    margin: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .image-div img{
@@ -14,7 +17,6 @@
 }
 
 .btn{
-    margin: 10px;
     padding: 10px 20px;
     background-color: orangered;
     border-radius: 5px;

@@ -14,7 +14,7 @@ const SingleData = (props) => {
                 <p>Age : {age}</p>
                 <p>{description.slice(0,130)}...</p>
                 <p><small className="text-muted">{duration}</small></p>
-                <button className='btn'>Add to List</button>
+                <button onClick={ ()=> props.handleAddToList(props.allData)} className='btn'>Add to List</button>
             </div>
         </div>
     );
