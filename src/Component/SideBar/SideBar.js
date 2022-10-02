@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './SideBar.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const SideBar = ({exerciseDetails}) => {
 
-    console.log(exerciseDetails);
+    let {breakTime, setBreakTime} = useState(0);
 
     let totalduration = 0;
 
@@ -18,6 +18,13 @@ const SideBar = ({exerciseDetails}) => {
             position: toast.POSITION.TOP_RIGHT
         });
     };
+
+    const handleBreakTime = e =>{
+        breakTime = e;
+        setBreakTime(breakTime);
+
+    }
+
     return (
         <div className='side-menu'>
             <div className='self-info'>
@@ -46,15 +53,15 @@ const SideBar = ({exerciseDetails}) => {
             <h2>Add a Break</h2>
             <div className='break-list'>
                 <ul>
-                    <li>05m</li>
-                    <li>10m</li>
-                    <li>12m</li>
-                    <li>15m</li>
+                    <li onClick={()=>handleBreakTime('05')}>05m</li>
+                    <li onClick={()=>handleBreakTime('10')}>10m</li>
+                    <li onClick={()=>handleBreakTime('12')}>12m</li>
+                    <li onClick={()=>handleBreakTime('15')}>15m</li>
                 </ul>
             </div>
             <h2>Exercise Details</h2>
             <p className='ex-bk-time'>Exercise Time: {totalduration} min</p>
-            <p className='ex-bk-time'>Break Time:</p>
+            <p className='ex-bk-time'>Break Time: {breakTime}</p>
             <div>
             </div>
             <button className='btn' onClick={showToastMessage}>Activity Completed</button>
