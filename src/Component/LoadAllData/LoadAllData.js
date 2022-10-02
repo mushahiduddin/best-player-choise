@@ -1,20 +1,24 @@
 import React, { useEffect, useState } from 'react';
-import SideBar from '../SideBar/SideBar';
 import SingleData from '../SingleData/SingleData';
+import SideBar from '../SideBar/SideBar';
 import './LoadAllData.css';
+import '../SideBar/SideBar.css'
 
 const LoadAllData = () => {
 
     const [allData, setAllData] = useState([]);
+    const [exerciseDetails, setExerciseTime] = useState([]);
 
-  useEffect(() => {
-    fetch(`data.json`)
-      .then(res => res.json())
-      .then(data => setAllData(data))
-  }, [])
+    useEffect(() => {
+        fetch(`data.json`)
+            .then(res => res.json())
+            .then(data => setAllData(data))
+    }, [])
 
-    const handleAddToList = (allData) => {
-        console.log(allData);
+    const handleAddToList = (singleData) => {
+
+        const updateExerciseDetail = [...exerciseDetails, singleData];
+        setExerciseTime(updateExerciseDetail);
     }
 
     return (
@@ -31,8 +35,8 @@ const LoadAllData = () => {
                     }
                 </div>
             </div>
-            <div className='side-menu'>
-                <SideBar></SideBar>
+            <div>
+                <SideBar exerciseDetails={exerciseDetails}></SideBar>
             </div>
         </div>
 

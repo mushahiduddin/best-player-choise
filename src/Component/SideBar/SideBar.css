@@ -1,3 +1,8 @@
+.side-menu{
+    position: sticky;
+    top: 0;
+}
+
 .self-info{
     display: flex; 
     align-items: center; 

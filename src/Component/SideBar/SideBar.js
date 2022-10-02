@@ -3,14 +3,23 @@ import './SideBar.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const SideBar = () => {
+const SideBar = ({exerciseDetails}) => {
+
+    console.log(exerciseDetails);
+
+    let totalduration = 0;
+
+    for(const exerciseDetail of exerciseDetails){
+        totalduration += exerciseDetail.duration;
+    }
+
     const showToastMessage = () => {
         toast.success('Wow, Congrats You are done !', {
-          position: toast.POSITION.TOP_RIGHT
+            position: toast.POSITION.TOP_RIGHT
         });
-      };
+    };
     return (
-        <div>
+        <div className='side-menu'>
             <div className='self-info'>
                 <div>
                     <img src="https://scontent.fdac141-1.fna.fbcdn.net/v/t39.30808-6/280516315_1920014341507062_8693529829755311648_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=swVY_v8MrLMAX9Rvc_Q&_nc_ht=scontent.fdac141-1.fna&oh=00_AT9X33n-Qjb3ZkjzcHPS64Erq0Jj8YG6RcG_zmX1LRlWwA&oe=633BF9A3" alt="" />
@@ -44,13 +53,13 @@ const SideBar = () => {
                 </ul>
             </div>
             <h2>Exercise Details</h2>
-            <p className='ex-bk-time'>Exercise Time:</p>
+            <p className='ex-bk-time'>Exercise Time: {totalduration} min</p>
             <p className='ex-bk-time'>Break Time:</p>
             <div>
+            </div>
             <button className='btn' onClick={showToastMessage}>Activity Completed</button>
             <ToastContainer />
-        </div>
-        </div>
+        </div >
     );
 };
 
