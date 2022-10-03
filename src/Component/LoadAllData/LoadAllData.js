@@ -24,7 +24,7 @@ const LoadAllData = () => {
     return (
         <div className='body-container'>
             <div className='main-container'>
-                <h1>Make yourself fit</h1>
+                <h1>Rudder Gym Center</h1>
                 <div className='activity-container'>
                     {
                         allData.map(singleData => <SingleData

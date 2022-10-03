@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const SideBar = ({exerciseDetails}) => {
 
-    let {breakTime, setBreakTime} = useState(0);
+    let [breakTime, setBreakTime] = useState(0);
 
     let totalduration = 0;
 
@@ -21,6 +21,7 @@ const SideBar = ({exerciseDetails}) => {
 
     const handleBreakTime = e =>{
         breakTime = e;
+        localStorage.setItem('value', e);
         setBreakTime(breakTime);
 
     }
@@ -53,10 +54,10 @@ const SideBar = ({exerciseDetails}) => {
             <h2>Add a Break</h2>
             <div className='break-list'>
                 <ul>
-                    <li onClick={()=>handleBreakTime('05')}>05m</li>
-                    <li onClick={()=>handleBreakTime('10')}>10m</li>
-                    <li onClick={()=>handleBreakTime('12')}>12m</li>
-                    <li onClick={()=>handleBreakTime('15')}>15m</li>
+                    <li onClick={()=>handleBreakTime('05 min')}>05m</li>
+                    <li onClick={()=>handleBreakTime('10 min')}>10m</li>
+                    <li onClick={()=>handleBreakTime('12 min')}>12m</li>
+                    <li onClick={()=>handleBreakTime('15 min')}>15m</li>
                 </ul>
             </div>
             <h2>Exercise Details</h2>

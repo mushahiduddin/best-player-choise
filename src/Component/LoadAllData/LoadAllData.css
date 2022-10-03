@@ -1,10 +1,31 @@
 .activity-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 20px;
+
 }
 
 .body-container{
     display: grid;
     grid-template-columns: 3fr 1fr;
+    padding: 20px;
 }
+
+@media only screen and (max-width: 688px) {
+
+    .body-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .activity-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 689px) and (max-width: 992px) {
+
+    .activity-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
